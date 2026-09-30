@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura con Columnas</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" rel="stylesheet">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+        .logo-cabecera {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .logo-publicidad {
+            width: 240px;
+            height: auto;
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .logo-batmanprin {
+            width: 230px;
+            height: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .batman-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .barra-navegacion{
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .texto-prin {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 50px;
+        }
+
+        .texto-prinpagina {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 70px;
+            margin: 20px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #cd3030;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #1a5e67;
+            padding: 15px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: rgb(23, 19, 19);
+            background-color: rgb(234, 227, 28);
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 20PX;
+            font-family: sans-serif;
+            transition: background-color 0.6s;
+            font-family: "UnifrakturCook", cursive;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(8, 8, 81);
+            color: darkkhaki;
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(23, 133, 6);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(79, 79, 79);
+        }
+
+        header {
+            background-color: rgb(79, 79, 79);
+        }
+
+        .texto-villanos {
+            color: black;
+            font-size: 30px;
+        }
+
+        .foto-villano {
+            margin-top: 30px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .pag-villano {
+            margin-top: 30px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="texto-prin"style="margin: 0;">Batmanifico</h1>
+            <nav Menú de navegación>
+                <a href="codigo-1.html" class="boton-nav">Boigrafia</a>
+                <a href="codigo-2.html" class="boton-nav activo">Villanos</a>
+                <a href="codigo-3.html" class="boton-nav">Características</a>
+            </nav>
+        </div>
+        <img src="imagenes/logo-batman.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Lego De la Inspiracion de tu mente a tu habilidad con las manos.</h3>
+            <a href="lego.com/es-mx" target="_blank">
+            <img src="imagenes/lego-logo.jpg" alt="Logo de publicidad" class="logo-publicidad">
+            </a>
+            <p>Bloques de plastico capaz de unirse para jugar e imaginar.</p>
+        </aside>
+        <section>
+            <article>
+                <h2 class="texto-prinpagina">Tragedia.</h2>
+                <a href="codigo-2.html" style="font-size: 25px;" class="boton-nav">Atras</a>
+                <div style="display: flex; align-items: flex-start; gap: 20px;">
+                </div>
+                <nav Menu de Villanos>
+                    <img src="imagenes/bane-pagvillano.jpg" class="pag-villano">
+                    <p style="font-size: 20px;">Bane es uno de los enemigos más imponentes y estratégicos de Batman, creado por Chuck Dixon, Doug Moench y Graham Nolan en Batman: Vengeance of Bane #1 (1993). Nacido en la prisión de máxima seguridad Peña Duro en la isla ficticia de Santa Prisca, sirvió desde niño la condena perpetua de su padre. En ese entorno hostil desarrolló un intelecto privilegiado combinando la lectura de cientos de libros con un riguroso entrenamiento físico. Tras sobrevivir como sujeto de prueba a un experimento con la droga Veneno (Venom), que le otorga una fuerza sobrehumana a través de un sistema de tubos conectados a su cerebro, logró escapar de la cárcel y fijó su objetivo en Ciudad Gótica.<br>
+
+                    Su conflicto con Batman destaca porque Bane no solo posee una fuerza descomunal, sino también una mente brillante capaz de descifrar la identidad secreta de Bruce Wayne únicamente mediante la observación. En la icónica saga Knightfall (1993), demostró su genialidad táctica al orquestar la fuga masiva del Asilo Arkham para agotar física y mentalmente al Caballero de la Noche atrapando criminales durante semanas. Una vez que Batman quedó diezmado, Bane lo emboscó en la propia Mansión Wayne y le rompió la espalda en la Baticueva, consolidándose como el único villano en haber "quebrado al Murciélago". Su motivación trasciende la simple dominación criminal, buscando probar su superioridad absoluta sobre el símbolo protector de Gótica.</p>
+                </nav>
+                <ul style="font-size: 18px;"type="disc">
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gotham City Archives. Batman y todos los personajes relacionados son propiedad de DC Comics. Este es un sitio web de fans sin fines de lucro.</p>
+        <p>Hecho en las sombras de Gotham. © 2026. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

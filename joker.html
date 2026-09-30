@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura con Columnas</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" rel="stylesheet">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+        .logo-cabecera {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .logo-publicidad {
+            width: 240px;
+            height: auto;
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .logo-batmanprin {
+            width: 230px;
+            height: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .batman-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .barra-navegacion{
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .texto-prin {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 50px;
+        }
+
+        .texto-prinpagina {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 70px;
+            margin: 20px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #cd3030;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #1a5e67;
+            padding: 15px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: rgb(23, 19, 19);
+            background-color: rgb(234, 227, 28);
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 20PX;
+            font-family: sans-serif;
+            transition: background-color 0.6s;
+            font-family: "UnifrakturCook", cursive;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(8, 8, 81);
+            color: darkkhaki;
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(23, 133, 6);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(79, 79, 79);
+        }
+
+        header {
+            background-color: rgb(79, 79, 79);
+        }
+
+        .texto-villanos {
+            color: black;
+            font-size: 30px;
+        }
+
+        .foto-villano {
+            margin-top: 30px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .pag-villano {
+            margin-top: 30px;
+            height: 260px;
+            margin-bottom: 10px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="texto-prin"style="margin: 0;">Batmanifico</h1>
+            <nav Menú de navegación>
+                <a href="codigo-1.html" class="boton-nav">Boigrafia</a>
+                <a href="codigo-2.html" class="boton-nav activo">Villanos</a>
+                <a href="codigo-3.html" class="boton-nav">Características</a>
+            </nav>
+        </div>
+        <img src="imagenes/logo-batman.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Lego De la Inspiracion de tu mente a tu habilidad con las manos.</h3>
+            <a href="lego.com/es-mx" target="_blank">
+            <img src="imagenes/lego-logo.jpg" alt="Logo de publicidad" class="logo-publicidad">
+            </a>
+            <p>Bloques de plastico capaz de unirse para jugar e imaginar.</p>
+        </aside>
+        <section>
+            <article>
+                <h2 class="texto-prinpagina">Tragedia.</h2>
+                <a href="codigo-2.html" style="font-size: 25px;" class="boton-nav">Atras</a>
+                <div style="display: flex; align-items: flex-start; gap: 20px;">
+                </div>
+                <nav Menu de Villanos>
+                    <img src="imagenes/joker-pagvillano.jpg" class="pag-villano">
+                    <p style="font-size: 20px;">El Joker es uno de los villanos más icónicos del cómic, creado por Bill Finger, Bob Kane y Jerry Robinson en Batman #1 (1940). No tiene un nombre ni origen definitivo en el canon principal, pues su propia mente reescribe su pasado constantemente. La versión más aceptada lo retrata como un comediante fracasado que, tras perder a su esposa embarazada en un accidente y verse obligado a participar en un robo en la planta Ace Chemicals, cae a un tanque de residuos tóxicos huyendo de Batman. Los químicos blanquean su piel, tiñen su cabello de verde y tuercen sus labios en una sonrisa permanente, lo que sumado a sus tragedias destruye su cordura por completo.<br>
+
+                    Su conflicto con Batman representa el choque entre el caos absoluto y el orden. Más que buscar dinero o poder, el Joker vive obsesionado con demostrar su teoría de que cualquier persona justa puede volverse loca tras sufrir "un mal día". Sabiendo que el Caballero de la Noche se rige por la regla de no matar, su mayor meta es llevarlo al límite para que rompa esa norma. A lo largo de los años ha marcado la vida de Batman provocando enormes tragedias, como dejar parapléjica a Barbara Gordon, asesinar al segundo Robin (Jason Todd) y manipular a la psiquiatra Harleen Quinzel para convertirla en Harley Quinn. Su intelecto criminal, su dominio de toxinas como el Veneno Joker y su mente impredecible lo convierten en la némesis definitiva de Ciudad Gótica.</p>
+                </nav>
+                <ul style="font-size: 18px;"type="disc">
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gotham City Archives. Batman y todos los personajes relacionados son propiedad de DC Comics. Este es un sitio web de fans sin fines de lucro.</p>
+        <p>Hecho en las sombras de Gotham. © 2026. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+

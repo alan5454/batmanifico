@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura con Columnas</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" rel="stylesheet">
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+        .logo-cabecera {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .logo-publicidad {
+            width: 240px;
+            height: auto;
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .logo-batmanprin {
+            width: 230px;
+            height: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .batman-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .barra-navegacion{
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .texto-prin {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 50px;
+        }
+
+        .texto-prinpagina {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 70px;
+            margin: 20px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #cd3030;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #1a5e67;
+            padding: 15px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: rgb(23, 19, 19);
+            background-color: rgb(234, 227, 28);
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 20PX;
+            font-family: sans-serif;
+            transition: background-color 0.6s;
+            font-family: "UnifrakturCook", cursive;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(8, 8, 81);
+            color: darkkhaki;
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(23, 133, 6);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(79, 79, 79);
+        }
+
+        header {
+            background-color: rgb(79, 79, 79);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="texto-prin" style="margin: 0;">Batmanifico</h1>
+            <nav Menú de navegación>
+                <a href="codigo-1.html" class="boton-nav activo">Biografia</a>
+                <a href="codigo-2.html" class="boton-nav">Vilanos</a>
+                <a href="codigo-3.html" class="boton-nav">Caracteristicas</a>
+            </nav>
+        </div>
+        <img src="imagenes/logo-batman.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Lego De la Inspiracion de tu mente a tu habilidad on las manos.</h3>
+            <a href="lego.com/es-mx" target="_blank">
+            <img src="imagenes/lego-logo.jpg" alt="Logo de publicidad" class="logo-publicidad">
+            </a>
+            <p style="font-size: 14px;">Bloques de plastico capaz de unirse para jugar e imaginar.</p>
+        </aside>
+        <section>
+            <article>
+                <h2 class="texto-prinpagina">Leyenda de Gotica</h2>
+                <img src="imagenes/bruce.jpg" alt="Imagen divisorio de bruce-batman(pag1)" class="logo-batmanprin">
+                <p style="font-size: 18px;">Batman identidad secreta de Bruce Wayen, multimillonario filantropo y due;o de Wayne Enterprises. Decide volverse un hero tras presenciar el asesinato de sus padres, Thomas y Martha Wayne, durante su infancia en Ciudad Gotica. Este a diferencia de los demas heroes convirtio su dolor en motivacion para convertir su cuerpo y mente en una arma definitiva para detener el crimen.</p>
+
+
+
+
+                <p style="font-size: 18px;">Durante años, viajo en busqueda de ser entrenado por maestros de artes marciales, criminologos y estrategas. Cuando regreso a Ciudad Gotica entendio que la fuerza fisica no le era suficiente pues necesitaba convertirse en un simbolo que infundiera miedo en los criminales. Adoptando asi la figura del murcielago junto a su base la Baticueva.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gotham City Archives. Batman y todos los personajes relacionados son propiedad de DC Comics. Este es un sitio web de fans sin fines de lucro.</p>
+        <p>Hecho en las sombras de Gotham. © 2026. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

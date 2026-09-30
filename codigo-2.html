@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura con Columnas</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" rel="stylesheet">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 50px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+        .logo-cabecera {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .logo-publicidad {
+            width: 240px;
+            height: auto;
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .logo-batmanprin {
+            width: 230px;
+            height: auto;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .batman-info {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .barra-navegacion{
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .texto-prin {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 50px;
+        }
+
+        .texto-prinpagina {
+            font-family: "UnifrakturCook", cursive;
+            font-size: 70px;
+            margin: 20px;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #cd3030;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #1a5e67;
+            padding: 15px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: rgb(23, 19, 19);
+            background-color: rgb(234, 227, 28);
+            padding: 6px 12px;
+            border-radius: 10px;
+            font-size: 20PX;
+            font-family: sans-serif;
+            transition: background-color 0.6s;
+            font-family: "UnifrakturCook", cursive;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(8, 8, 81);
+            color: darkkhaki;
+        }
+
+        .boton-nav.activo {
+            background-color: rgb(23, 133, 6);
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+
+        body {
+            background-color: rgb(79, 79, 79);
+        }
+
+        header {
+            background-color: rgb(79, 79, 79);
+        }
+
+        .texto-villanos {
+            color: black;
+            font-size: 30px;
+        }
+
+        .foto-villano {
+            margin-top: 30px;
+            height: 150px;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="texto-prin"style="margin: 0;">Batmanifico</h1>
+            <nav Menú de navegación>
+                <a href="codigo-1.html" class="boton-nav">Boigrafia</a>
+                <a href="codigo-2.html" class="boton-nav activo">Villanos</a>
+                <a href="codigo-3.html" class="boton-nav">Características</a>
+            </nav>
+        </div>
+        <img src="imagenes/logo-batman.jpg" alt="Logo de Mi Sitio Web" class="logo-cabecera">
+    </header>
+    <main>
+        <aside>
+            <h3>Lego De la Inspiracion de tu mente a tu habilidad con las manos.</h3>
+            <a href="lego.com/es-mx" target="_blank">
+            <img src="imagenes/lego-logo.jpg" alt="Logo de publicidad" class="logo-publicidad">
+            </a>
+            <p>Bloques de plastico capaz de unirse para jugar e imaginar.</p>
+        </aside>
+        <section>
+            <article>
+                <h2 class="texto-prinpagina">Tragedia.</h2>
+                <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <img src="imagenes/villanos.jpg" alt="Villanos de Batman" style="max-width: 200px; height: auto;">
+                <p style="font-size: 20px;">
+                La galería de villanos de Batman destaca por reflejar distintas facetas de su compleja psicología y de su doble vida como héroe y multimillonario. Mientras antagonistas como el Guasón ponen a prueba la cordura y el código moral de Batman al encarnar el caos absoluto, figuras como el Acertijo o El Pingüino desafían constantemente la astucia del detective y el control de Bruce Wayne sobre el crimen organizado de Ciudad Gótica. Por otro lado, personajes como Dos Caras y el Sr. Frío sostienen una tragedia personal que conecta directamente con la empatía de Bruce, quien ve en ellos el reflejo del trauma y las pérdidas que él mismo sufrió, mientras que villanos como Bane o Ras al Ghul atacan tanto su resistencia física como su propósito como protector de la ciudad, obligando a Batman a confrontar de manera continua los límites de su propia naturaleza humana.</p>
+                </div>
+                <nav Menu de Villanos>
+                    <img src="imagenes/joker.jpg" class="foto-villano">
+                    <a href="joker.html" style="font-size: 25px;" class="boton-nav">Joker</a>
+                    <p style="font-size: 20px;">Villano mas reconocido de batman, reconocido por ser un asesino letal y muy inteligente que desafia a Batman cada vez que se logran encontrar.</p>
+
+                    <img src="imagenes/bane.jpg" class="foto-villano">
+                    <a href="bane.html" style="font-size: 25px;" class="boton-nav">Bane</a>
+                    <p style="font-size: 20px;">Bane es un enemigo formidable de Batman que lo desafia tanto fisica como mentalmente para los momentos en que se enfrentan llegandole a romper la espalda en su pelea mas recordada.</p>
+
+                    <img src="imagenes/pinguino.jpg" class="foto-villano">
+                    <a href="pinguino.html" style="font-weight: 25px;" class="boton-nav">El Pinguino</a>
+                    <p style="font-size: 20px;">El pinguino logra destacar como villano de Batman por ser un mafioso inteligente que trabaja por medio del club Iceberg Lounge. Este desafia al heroe constantemente con el control que tiene del crimen organizado por el lado de Batman y a Bruce Wayne lo enfrenta de manera directa en la alta sociedad de Gotica.</p>
+                    
+                    <img src="imagenes/acertijo.jpg" class="foto-villano">
+                    <a href="acertijo.html" style="font-weight: 25px;" class="boton-nav">Acertijo</a>
+                    <p style="font-size: 20px;">Crimir obsesionado con demostrar la superioridad intelectual que tiene sobre Batman a través de distintos acertijos y rompecabezas. El ego que tiene este le impide cometer crimenes sin dejar una pista que lo vincule, esto convirtiendolo en duelos de ingenio analitico directo contra el Mejor Detedtive del Mundo.</p>
+                </nav>
+                <ul style="font-size: 18px;"type="disc">
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Gotham City Archives. Batman y todos los personajes relacionados son propiedad de DC Comics. Este es un sitio web de fans sin fines de lucro.</p>
+        <p>Hecho en las sombras de Gotham. © 2026. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
